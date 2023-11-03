@@ -7,8 +7,8 @@ import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Cocktail Recipes",
-  description: "Cocktail Recipes",
+  title: "Mixology Master",
+  description: "Mixology Master, search over 1000 different beverage recipes!!",
 };
 
 export default function RootLayout({ children }) {

@@ -34,19 +34,19 @@ export function Modal({ data, closeModal }) {
         data.strDrink ?
           <div className="fixed top-0 w-full h-screen flex justify-center items-center bg-black/80">
             < div
-              className=" relative mx-auto flex w-3/4 bg-[#662C29] rounded-xl overflow-hidden" >
+              className=" relative mx-auto flex max-h-[80%] w-3/4 bg-[#662C29] rounded-xl overflow-hidden" >
               <div className="absolute right-5 top-5">
                 <Button variant="outline" onClick={closeModal}>Close</Button>
               </div>
-              <Image
-                alt="Drink"
-                className=" w-1/3 object-cover"
-                src={data.strDrinkThumb}
-                style={{
-                  aspectRatio: "1/1",
-                  objectFit: "cover",
-                }}
-              />
+              <div className="flex justify-center items-center">
+                <Image
+                  alt="Beverage"
+                  className="object-cover w-full rounded"
+                  src={data.strDrinkThumb}
+                  width={500}
+                  height={500}
+                />
+              </div>
               <div className="p-6 ">
                 <div>
                   <h1 className="text-3xl font-extrabold">{data.strDrink}</h1>
@@ -86,11 +86,11 @@ export function Modal({ data, closeModal }) {
           //skeleton loader vv
           <div className="fixed top-0 w-full h-screen flex justify-center items-center bg-black/80">
             <div
-              className=" relative mx-auto flex w-3/4 bg-[#662C29] rounded-xl overflow-hidden">
+              className=" relative mx-auto flex max-h-[80%] w-3/4 bg-[#662C29] rounded-xl overflow-hidden">
               <div className="absolute right-5 top-5">
                 <Button variant="outline" onClick={closeModal}>Close</Button>
               </div>
-              <div className=" w-1/3 bg-[#F64740]"
+              <div className=" w-[500px] h-[500px] bg-[#F64740]"
                 style={{
                   aspectRatio: "1/1",
                   objectFit: "cover",

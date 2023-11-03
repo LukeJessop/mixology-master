@@ -26,7 +26,7 @@ export default function Card({ id, img, title, clickHandler, setModalActive }) {
       />
       <div className="p-4">
         <h2
-          className="block mt-1 text-lg font-bold leading-tight text-black dark:text-white">
+          className="block mt-1 text-lg font-bold leading-tight text-[#ffa2a2]">
           {title}
         </h2>
       </div>

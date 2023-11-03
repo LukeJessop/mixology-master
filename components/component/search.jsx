@@ -64,6 +64,7 @@ export default function Search() {
               </svg>
             </button>
           </div>
+          <h2 className=" font-bold text-xl text-[#F64740] border-b border-[#F64740] w-full">Filter Your Search!</h2>
           <Filter />
         </div>
         <div className="mr-10  ml-auto">

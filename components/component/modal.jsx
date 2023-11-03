@@ -46,7 +46,7 @@ export function Modal({ data, closeModal }) {
                   objectFit: "cover",
                 }}
               />
-              <div className="p-6">
+              <div className="p-6 ">
                 <div>
                   <h1 className="text-3xl font-extrabold">{data.strDrink}</h1>
                 </div>
@@ -94,36 +94,44 @@ export function Modal({ data, closeModal }) {
                   aspectRatio: "1/1",
                   objectFit: "cover",
                 }} />
-              <div className="p-6">
-                <div className="bg-[#F64740]">
-                  <div className="text-3xl font-extrabold hidden">{data.strDrink}</div>
+              <div className="p-6 w-1/2">
+                <div className="">
+                  <div className="text-3xl font-extrabold bg-[#F64740] w-full h-[50px] rounded-3xl"></div>
                 </div>
 
-                <div>
+                <div className="">
                   <div>
-                    <h2 className="text-lg font-semibold mt-2 mb-2">Ingredients:</h2>
-                    <ul className="list-disc list-inside text-sm mb-4">
-                      {ingredientsAndMeasures?.map((item, index) => {
+                    <h2 className="text-lg font-semibold bg-[#F64740] w-max mt-2 mb-2 text-transparent rounded-full">Ingredients:</h2>
+                    <ul className="list-disc list-inside text-sm mb-4 flex gap-2 flex-col">
+                      {[1, 2, 3]?.map((item, index) => {
                         return (
-                          <li key={index}>{item}</li>
+                          <div key={index} className=" bg-[#F64740] w-1/4 h-[16px] rounded-3xl"></div>
                         )
                       })}
                     </ul>
                   </div>
                   <div>
-                    <h2 className="text-lg font-semibold mt-2 mb-2">Glass:</h2>
-                    <p className="text-sm mb-4">
-                      {data.strGlass}
-                    </p>
+                    <h2 className="text-lg font-semibold bg-[#F64740] w-max mt-2 mb-2 text-transparent rounded-full">Glass:</h2>
+                    <ul className="list-disc list-inside text-sm mb-4 flex gap-2 flex-col">
+                      {[1, 2, 3]?.map((item, index) => {
+                        return (
+                          <div key={index} className=" bg-[#F64740] w-1/4 h-[16px] rounded-3xl"></div>
+                        )
+                      })}
+                    </ul>
                   </div>
                   <div>
-                    <h2 className="text-lg font-semibold mt-2 mb-2">{data.strAlcoholic}</h2>
+                    <h2 className="text-lg font-semibold bg-[#F64740] w-max mt-2 mb-2 text-transparent rounded-full">{data.strAlcoholic}</h2>
                   </div>
                   <div>
-                    <h2 className="text-lg font-semibold mt-2 mb-2">Instructions:</h2>
-                    <p className="text-sm mb-4">
-                      {data.strInstructions}
-                    </p>
+                    <h2 className="text-lg font-semibold bg-[#F64740] w-max mt-2 mb-2 text-transparent rounded-full">Instructions:</h2>
+                    <ul className="list-disc list-inside text-sm mb-4 flex gap-2 flex-col">
+                      {[1, 2, 3, 4]?.map((item, index) => {
+                        return (
+                          <div key={index} className=" bg-[#F64740] w-3/4 h-[16px] rounded-3xl"></div>
+                        )
+                      })}
+                    </ul>
                   </div>
                 </div>
               </div>

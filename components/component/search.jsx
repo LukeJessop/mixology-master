@@ -161,14 +161,14 @@ export default function Search() {
             </AccordionItem>
           </Accordion>
         </div>
-        <div className="mx-auto">
+        <div className="mr-10  ml-auto">
           <div className="grid gap-6 md:gap-8">
             {!results.length && <h2 className="text-lg font-bold tracking-tight text-white">Use the filters to find what you are looking for!</h2>}
 
             {!results.length ?
               null
               :
-              <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {results.map((item, index) => {
                   return (
                     <Card key={index} title={item.strDrink} img={item.strDrinkThumb} id={item.idDrink} clickHandler={clickHandler} setModalActive={setModalActive} />

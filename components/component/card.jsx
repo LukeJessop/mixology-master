@@ -12,18 +12,16 @@ export default function Card({ id, img, title, clickHandler, setModalActive }) {
 
   return (
     <div
-      className="max-w-2xl bg-[#362221] rounded-xl shadow-md overflow-hidden mx-auto p-4 " onClick={() => { clickHandler(id); setModalActive(true) }}>
+      className=" cursor-pointer max-w-[350px] bg-[#362221] rounded-xl shadow-md overflow-hidden mx-auto p-4 " onClick={() => { clickHandler(id); setModalActive(true) }}>
       <img
         alt="Beverage"
-        className="object-cover w-full h-64 rounded"
-        height="400"
+        className="object-cover w-full rounded"
         src={img}
         style={{
-          aspectRatio: "600/400",
+          aspectRatio: "1/1",
           objectFit: "cover",
-        }}
-        width="500" />
-      <div className="py-8">
+        }} />
+      <div className="pt-4">
         <h2
           className="block mt-1 text-lg font-bold leading-tight text-black dark:text-white">
           {title}

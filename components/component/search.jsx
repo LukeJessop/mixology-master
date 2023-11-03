@@ -6,7 +6,6 @@
 import { AccordionTrigger, AccordionContent, AccordionItem, Accordion } from "@/components/ui/accordion"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
-import Link from "next/link"
 import Card from "./card";
 import { useEffect, useState } from "react";
 import { Modal } from "./modal"
@@ -19,7 +18,7 @@ export default function Search() {
   const [ingredients, setIngredients] = useState([])
   const [alcoholFilter, setAlcoholFilter] = useState([])
 
-  const [activeFilters, setActiveFilters] = useState(["Cocktail"])
+  const [activeFilters] = useState(["Cocktail"])
 
   const [results, setResults] = useState([])
 

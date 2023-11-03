@@ -3,7 +3,7 @@
  * @see https://v0.dev/t/QyrCdenEg4Y
  */
 
-import { useEffect, useState } from "react";
+import Image from "next/image";
 
 
 export default function Card({ id, img, title, clickHandler, setModalActive }) {
@@ -13,7 +13,7 @@ export default function Card({ id, img, title, clickHandler, setModalActive }) {
   return (
     <div
       className=" cursor-pointer max-w-[350px] bg-[#362221] rounded-xl shadow-md overflow-hidden mx-auto p-4 " onClick={() => { clickHandler(id); setModalActive(true) }}>
-      <img
+      <Image
         alt="Beverage"
         className="object-cover w-full rounded"
         src={img}

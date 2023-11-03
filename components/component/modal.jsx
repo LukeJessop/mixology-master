@@ -3,6 +3,7 @@
  * @see https://v0.dev/t/mB7P8JWYMmX
  */
 import { Button } from "@/components/ui/button"
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export function Modal({ data, closeModal }) {
@@ -37,7 +38,7 @@ export function Modal({ data, closeModal }) {
               <div className="absolute right-5 top-5">
                 <Button variant="outline" onClick={closeModal}>Close</Button>
               </div>
-              <img
+              <Image
                 alt="Drink"
                 className=" w-1/3 object-cover"
                 src={data.strDrinkThumb}
